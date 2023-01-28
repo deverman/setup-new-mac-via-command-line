@@ -77,8 +77,9 @@ echo "Installing Speedtest..."
 brew install speedtest_cli
 
 # Install 1Password
-echo "Installing 1Password..."
-brew install 1password
+# this is commented out because I don't want to upgrade to 1Password 7
+# echo "Installing 1Password..."
+# brew install 1password
 
 # Install Anki
 echo "Installing Anki..."
@@ -185,9 +186,24 @@ brew install handbrake
 echo "Installing Spark..."
 brew install readdle-spark
 
+# Install Freedom
+echo "Installing Freedom..."
+brew install freedom
 
-# Install Mac App Store Commandline...
-echo "Installing Mac App Store Commandline..."
+# Install Readwise ibooks app
+echo "Installing Readwise ibooks app..."
+brew install readwise-ibooks
+
+# Install VLC app
+echo "Installing VLC..."
+brew install vlc
+
+# Install Netnewswire
+echo "Installing netnewswire..."
+brew install netnewswire
+
+# Install Mac App Store Command line...
+echo "Installing Mac App Store Command line..."
 brew install mas
 
 
@@ -236,5 +252,10 @@ echo "You're done!"
 # whatsapp
 
 
-
+# Items that need to be manually installed:
+# - WordCounter
+# - Readwise
+# - Insta360 Link Controller
+# - Exodus https://www.exodus.com/m1/
+# - Leder Live
 
