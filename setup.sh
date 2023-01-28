@@ -28,7 +28,7 @@ defaults write com.apple.finder ShowStatusBar -bool true
 # Check for Homebrew, and then install it
 if test ! "$(which brew)"; then
     echo "Installing homebrew..."
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     echo "Homebrew installed successfully"
 else
     echo "Homebrew already installed!"
@@ -46,10 +46,6 @@ brew update
 echo "Upgrading Homebrew..."
 brew upgrade
 
-# Install iTerm2
-echo "Installing iTerm2..."
-brew cask install iterm2
-
 # Update the Terminal
 # Install oh-my-zsh
 echo "Installing oh-my-zsh..."
@@ -61,41 +57,184 @@ logout
 echo "Installing Git..."
 brew install git
 
-# Install Powerline fonts
-echo "Installing Powerline fonts..."
-git clone https://github.com/powerline/fonts.git
-cd fonts || exit
-sh -c ./install.sh
+# Install Python
+echo "Installing Python..."
+brew install python
 
-# Install ruby
-if test ! "$(which ruby)"; then
-    echo "Installing Ruby..."
-    brew install ruby
-    echo "Adding the brew ruby path to shell config..."
-    echo 'export PATH='"/usr/local/opt/ruby/bin:$PATH" >>~/.bash_profile
-else
-    echo "Ruby already installed!"
-fi
+# Install Sonos Command Line
+echo "Installing Sonos Commandline..."
+pip install -U soco-cli
 
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install nmap
+# Install tea package manager
+# TODO fix below line not working
+# sh <(curl https://tea.xyz)
+
 
 # Install other useful binaries.
+
+# Install Speedtest
+echo "Installing Speedtest..."
 brew install speedtest_cli
 
-# Core casks
-brew cask install --appdir="/Applications" alfred
+# Install 1Password
+echo "Installing 1Password..."
+brew install 1password
 
-# Development tool casks
-brew cask install --appdir="/Applications" visual-studio-code
+# Install Anki
+echo "Installing Anki..."
+brew install anki
 
-# Misc casks
-brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" 1password
-brew cask install --appdir="/Applications" caffeine
+# Install arq 
+echo "Installing Arq..."
+brew install arq
+
+# Install bartender
+echo "Installing Bartender..."
+brew install bartender
+
+# Install BBEdit
+echo "Installing BBEdit..."
+brew install bbedit
+
+# Install deno
+echo "Installing Deno..."
+brew install deno
+
+# Install lighthouse
+echo "Installing lighthouse..."
+brew install lighthouse
+
+# Install bitcoin-core
+echo "Installing Bitcoin-core"
+brew install bitcoin-core
+
+# Install Brave Browser
+echo "Installing Brave Browser..."
+brew install brave-browser
+
+# Install cardhop
+echo "Installing Cardhop..."
+brew install cardhop
+
+# Install fantastical
+echo "Installing Fantastical..."
+brew install fantastical
+
+# Install chronosync
+echo "Installing ChronoSync"
+brew install chronosync
+
+# Install hazel
+echo "Installing Hazel..."
+brew install hazel
+
+# Install Miro
+echo "Installing Miro..."
+brew install miro
+
+# Install NordVPN
+echo "Installing NordVPN..."
+brew install nordvpn
+
+
+# Install OmniDiskSweeper
+echo "Installing OmniDiskSweeper..."
+brew install omnidisksweeper
+
+# Install Omnifocus
+echo "Installing Omnifocus..."
+brew install omnifocus
+
+# Install Resilio-sync
+echo "Installing Resilio-sync..."
+brew install resilio-sync
+
+# Install slack
+echo "Installing Slack..."
+brew install slack
+
+# Install Signal
+echo "Installing Signal..."
+brew install signal
+
+# Install Discord
+echo "Installing Discord..."
+brew install discord
+
+# Install Telegram
+echo "Installing Telegram..."
+brew install telegram
+
+# Install Timing
+echo "Installing Timing..."
+brew install timing
+
+# Install Transmission
+echo "Installing Transmission..."
+brew install transmission
+
+# Install Transmit
+echo "Installing Transmit..."
+brew install transmit
+
+# Install Handbrake
+echo "Installing Handbrake..."
+brew install handbrake
+
+# Install Spark Email
+echo "Installing Spark..."
+brew install readdle-spark
+
+
+# Install Mac App Store Commandline...
+echo "Installing Mac App Store Commandline..."
+brew install mas
+
+
+# Install Apps from the Mac App store 
+appStoreApps=(
+	1333542190  # 1Password 7               (7.9.6)
+	1225570693  # Ulysses                   (29.2)
+	1153157709  # Speedtest                 (1.25)
+	720669838   # iThoughtsX                (9.2)
+	1277179284  # FSNotes                   (6.1.2)
+	497799835   # Xcode                     (14.2)
+	1289119450  # URL Linker                (1.1)
+	403504866   # PCalc                     (4.10.5)
+	# 1176895641  # Spark                     (2.11.27)
+	1640236961  # Save to Reader            (0.15.10)
+	1303222628  # Paprika Recipe Manager 3  (3.7.2)
+	1376878040  # BlueWallet                (6.2.18)
+	1659363738  # TapTab                    (1.3)
+	899247664   # TestFlight                (3.2.3)
+	409201541   # Pages                     (12.2.1)
+	1055511498  # Day One                   (2023.1)
+	639968404   # Parcel                    (7.6.6)
+	1480068668  # Messenger                 (169.0)
+	408981434   # iMovie                    (10.3.5)
+	409203825   # Numbers                   (12.2.1)
+	1381004916  # Discovery                 (2.1.0)
+	1544743900  # Hush                      (1.0.10)
+	409183694   # Keynote                   (12.2.1)
+
+)
+
+# Install AppStore apps
+# WARNING: This tool can only reinstall apps that are already tied to you account. If you're downloading something for the first time do it through AppStore
+mas install ${appStoreApps[@]}
 
 # Remove outdated versions from the cellar.
 echo "Running brew cleanup..."
 brew cleanup
 echo "You're done!"
+
+# Additional to consider 
+# default-folder-x
+# karabiner-elements
+# keyboard-maestro
+# slack-cli
+# whatsapp
+
+
+
+
