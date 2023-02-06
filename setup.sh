@@ -145,6 +145,7 @@ brew install omnidisksweeper
 # Install Omnifocus
 echo "Installing Omnifocus..."
 brew install omnifocus
+# Above install failed for me 
 
 # Install Resilio-sync
 echo "Installing Resilio-sync..."
@@ -202,6 +203,18 @@ brew install vlc
 echo "Installing netnewswire..."
 brew install netnewswire
 
+# Install VS Code
+echo "Installing VS Code..."
+brew install visual-studio-code
+
+# Install Dash
+echo "Installing Dash..."
+brew install --cask dash
+
+## Install OBS
+echo "Install OBS..."
+brew install --cask obs
+
 # Install Mac App Store Command line...
 echo "Installing Mac App Store Command line..."
 brew install mas
@@ -239,6 +252,11 @@ appStoreApps=(
 # WARNING: This tool can only reinstall apps that are already tied to you account. If you're downloading something for the first time do it through AppStore
 mas install ${appStoreApps[@]}
 
+# Accept XCode license 
+sudo xcodebuild -license accept
+
+
+
 # Remove outdated versions from the cellar.
 echo "Running brew cleanup..."
 brew cleanup
@@ -257,5 +275,5 @@ echo "You're done!"
 # - Readwise
 # - Insta360 Link Controller
 # - Exodus https://www.exodus.com/m1/
-# - Leder Live
+# - Ledger Live
 
