@@ -4,7 +4,9 @@
 
 I wanted to do a fresh install on my new Apple Powerbook M1 so I created this script. You should fork and customize this script for your own needs.
 
-This script can install apps via [Homebrew](https://brew.sh) and also the [Mac App Store](https://github.com/mas-cli/mas). 
+This script can install apps via [Homebrew](https://brew.sh) and also the [Mac App Store](https://github.com/mas-cli/mas).
+
+There is a [corresponding article on the manual setup steps for many of the apps](https://www.deverman.org/automating-a-new-macintosh-setup/) included in the command line install.
 
 ## Finding other apps
 
