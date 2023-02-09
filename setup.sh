@@ -219,6 +219,10 @@ brew install --cask obs
 echo "Install Clay..."
 brew install --cask clay
 
+## Install Github Commandline...
+echo "Install Github Command line..."
+brew install gh
+
 
 # Install Mac App Store Command line...
 echo "Installing Mac App Store Command line..."
