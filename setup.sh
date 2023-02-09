@@ -215,6 +215,11 @@ brew install --cask dash
 echo "Install OBS..."
 brew install --cask obs
 
+## Install Clay
+echo "Install Clay..."
+brew install --cask clay
+
+
 # Install Mac App Store Command line...
 echo "Installing Mac App Store Command line..."
 brew install mas
