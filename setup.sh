@@ -223,6 +223,9 @@ brew install --cask clay
 echo "Install Github Command line..."
 brew install gh
 
+## Install Ledger Live...
+echo "Install Ldeger Live..."
+brew install ledger-live
 
 # Install Mac App Store Command line...
 echo "Installing Mac App Store Command line..."
