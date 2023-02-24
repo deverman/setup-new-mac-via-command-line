@@ -63,7 +63,7 @@ brew install python
 
 # Install Sonos Command Line
 echo "Installing Sonos Commandline..."
-pip install -U soco-cli
+pip3 install -U soco-cli
 
 # Install tea package manager
 # TODO fix below line not working
@@ -283,9 +283,7 @@ echo "You're done!"
 
 
 # Items that need to be manually installed:
-# - WordCounter
+# - [WordCounter](https://wordcounterapp.com)
 # - Readwise
 # - Insta360 Link Controller
-# - Exodus https://www.exodus.com/m1/
-# - Ledger Live
-
+# - [Exodus](https://www.exodus.com/m1/)
