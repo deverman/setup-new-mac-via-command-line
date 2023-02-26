@@ -227,6 +227,10 @@ brew install gh
 echo "Install Ldeger Live..."
 brew install ledger-live
 
+## Install Terminal 
+echo "Install new Warp Terminal..."
+brew install warp
+
 # Install Mac App Store Command line...
 echo "Installing Mac App Store Command line..."
 brew install mas
