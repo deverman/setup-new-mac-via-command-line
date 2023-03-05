@@ -183,10 +183,6 @@ brew install transmit
 echo "Installing Handbrake..."
 brew install handbrake
 
-# Install Spark Email
-echo "Installing Spark..."
-brew install readdle-spark
-
 # Install Freedom
 echo "Installing Freedom..."
 brew install freedom
