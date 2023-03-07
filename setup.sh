@@ -231,6 +231,9 @@ brew install warp
 echo "Installing Mac App Store Command line..."
 brew install mas
 
+# Install starship cross-shell prompt...
+Echo "installing Starship cross-shell prompt..."
+brew install starship
 
 # Install Apps from the Mac App store 
 appStoreApps=(
