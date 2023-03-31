@@ -207,25 +207,33 @@ brew install visual-studio-code
 echo "Installing Dash..."
 brew install --cask dash
 
-## Install OBS
+# Install OBS
 echo "Install OBS..."
 brew install --cask obs
 
-## Install Clay
+# Install Clay
 echo "Install Clay..."
 brew install --cask clay
 
-## Install Github Commandline...
+# Install Github Commandline...
 echo "Install Github Command line..."
 brew install gh
 
-## Install Ledger Live...
+# Install Ledger Live...
 echo "Install Ldeger Live..."
 brew install ledger-live
 
-## Install Terminal 
+# Install Terminal 
 echo "Install new Warp Terminal..."
 brew install warp
+
+# Install Dash
+echo "Installing Dash..."
+brew install dash
+
+# Install jq Command line JSON tool...
+echo "Install jq Command line JSON tool..."
+brew install jq
 
 # Install Mac App Store Command line...
 echo "Installing Mac App Store Command line..."
