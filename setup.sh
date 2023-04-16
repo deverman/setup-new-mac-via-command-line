@@ -101,6 +101,10 @@ brew install bbedit
 echo "Installing Deno..."
 brew install deno
 
+# Install Marksman Language server protocol 
+echo "Installing Marksman..."
+brew install marksman
+
 # Install lighthouse
 echo "Installing lighthouse..."
 brew install lighthouse
