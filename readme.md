@@ -2,7 +2,7 @@
 
 ## About
 
-I wanted to do a fresh install on my new Apple Powerbook M1 so I created this script. You should fork and customize this script for your own needs.
+I wanted to do a fresh install on my new Apple Powerbook M2 so I created this script. You should fork and customize this script for your own needs.
 
 This script can install apps via [Homebrew](https://brew.sh) and also the [Mac App Store](https://github.com/mas-cli/mas).
 
