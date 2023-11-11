@@ -57,6 +57,9 @@ logout
 echo "Installing Git..."
 brew install git
 
+# Install Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # Install Python
 echo "Installing Python..."
 brew install python
@@ -97,6 +100,9 @@ brew install bartender
 echo "Installing BBEdit..."
 brew install bbedit
 
+# configure git to use BBEdit as the editor for commits
+git config --global core.editor "bbedit -w"
+
 # Install deno
 echo "Installing Deno..."
 brew install deno
@@ -104,6 +110,10 @@ brew install deno
 # Install Marksman Language server protocol 
 echo "Installing Marksman..."
 brew install marksman
+
+# Install proselint 
+echo "Installing Proselint..."
+brew install proselint
 
 # Install lighthouse
 echo "Installing lighthouse..."
